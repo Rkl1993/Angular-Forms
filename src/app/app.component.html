@@ -1,2 +1,28 @@
-<app-reactive-form></app-reactive-form>
-<app-template-form></app-template-form>
+<!-- <app-reactive-form></app-reactive-form>
+<app-template-form></app-template-form> -->
+
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+</style>
+</head>
+<body>
+
+<ul>
+    <nav>
+        <a class="button" class="btn btn-primary " routerLink="/Template-Form" routerLinkActive="activebutton">Template Form</a>  |
+    
+        <a class="button" class="btn btn-secondary" routerLink="/Reactive-Form" routerLinkActive="activebutton">Reactive Form</a>
+      </nav>
+      
+</ul>
+  
+<router-outlet></router-outlet>
