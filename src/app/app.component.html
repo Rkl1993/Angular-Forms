@@ -1,2 +1,50 @@
-<app-reactive-form></app-reactive-form>
-<app-template-form></app-template-form>
+<!-- <app-reactive-form></app-reactive-form>
+<app-template-form></app-template-form> -->
+
+<html>
+<head>
+<style>
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(214, 218, 216);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #0ccfcf;
+}
+
+.active {
+  background-color: #95fcfc;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<ul>
+    <li> <a class="active" href="#Template Form" style="color: black;" routerLink="/Template-Form" routerLinkActive="activebutton">Template Form</a>  </li>
+           
+    <li>  <a style="color: black;" routerLink="/Reactive-Form" routerLinkActive="activebutton">Reactive Form</a></li>
+       
+      
+        
+</ul>
+</nav>
+
+<router-outlet></router-outlet>
