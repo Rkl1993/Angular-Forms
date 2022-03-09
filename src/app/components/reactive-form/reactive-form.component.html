@@ -74,14 +74,13 @@
                            class="invalid-feedback">
                        <div *ngIf="fval.checkbox.errors.required">
                            This is required field 
-
                                     </div>
                                 </div>
                             </div>
                         </div>
   
                         <div class=" form-group ">
-                            <button type="submit " class="btn btn-success" >Register</button>
+                            <button type="submit" [disabled]="userForm.invalid" class="btn btn-success" >Register</button>
                             <button type="button" (click)="onReset()" class="btn btn-warning">Reset</button>
                         </div>
                     </form>
