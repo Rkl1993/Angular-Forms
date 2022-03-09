@@ -7,7 +7,7 @@ describe('ReactiveFormComponent', () => {
   let fixture: ComponentFixture<ReactiveFormComponent>;
 
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
+    await TestBed.configureTestingModule ({
       declarations: [ ReactiveFormComponent ]
     })
     .compileComponents();

@@ -5,22 +5,23 @@ import { AppComponent } from './app.component';
 import {AppRoutingModule}from './app-routing.module';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './components/template-form/template-form.component';
-import { RouterModule } from '@angular/router';
+import { PasswordPatternDirective } from './directive/Password/passwordvalidator.directive';
+import { EmailvalidatorDirective } from './directive/email/emailvalidator.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormComponent,
-    TemplateFormComponent, 
+    TemplateFormComponent,
+    PasswordPatternDirective,
+    EmailvalidatorDirective 
   ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      {path: 'Template-Form', component: TemplateFormComponent},
-      {path: '', component: ReactiveFormComponent},
-    ]),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
